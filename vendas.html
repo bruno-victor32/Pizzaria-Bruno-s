@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cabecalho-footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/vendas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Vendas - Pizzaria Bruno's</title>
+</head>
+<body>
+    <header><!--Container para conteúdo introdutório ou um conjunto de links de navegação-->
+        <div class="caixa"><!-- tag div define uma divisão ou uma seção em um documento-->
+            <h1><!--Titulo principal-->
+                <img src="imagens/logo.png" alt="logo-pizzaria">
+            </h1>
+
+            <nav><!--Define um conjunto de links de navegação-->
+                <ul class="navegacao">
+                    <li><a href="index.html">Home</a></li> <!--Tag a permite link, tag li refere-se a uma lista não ordenada-->
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="vendas.html">Vendas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="produtos" class="TipoPizzas">
+        <form >
+            <h2>Selecione os produtos que foram vendidos:</h2>
+            <ul>
+                <li><input type="radio"   id="mussarela"        name="pizzas" checked ><label for="mussarela"  >Mussarela</label></li>
+                <li><input type="radio"   id="napolitana"        name="pizzas" checked ><label for="napolitana"  >Napolitana</label></li>
+                <li><input type="radio"   id="calabresa"        name="pizzas" checked ><label for="calabresa"  >Calabresa</label></li>
+                <li><input type="radio"   id="alhoOleo"         name="pizzas"><label for="alhoOleo">Alho e Óleo</label></li>
+                <li><input type="radio"   id="marguerita"       name="pizzas"><label for="marguerita">Marguerita</label></li>
+                <li><input type="radio"   id="escarola"         name="pizzas"><label for="escarola">Escarola</label></li>
+                <li><input type="radio"   id="roma"             name="pizzas"><label for="roma">Roma</label></li>
+                <li><input type="radio"   id="doisQueijos"      name="pizzas"><label for="doisQueijos">Dois Queijos</label></li>
+                <li><input type="radio"   id="bacon"            name="pizzas"><label for="bacon">Bacon</label></li>
+                <li><input type="radio"   id="frangoCatupiry"   name="pizzas"><label for="frangoCatupiry">Frango com catupiry</label></li>
+                <li><input type="radio"   id="vegetariana"      name="pizzas"><label for="vegetariana">Vegetariana</label></li>
+                <li><input type="radio"   id="gostosona"        name="pizzas"><label for="gostosona">Gostosona</label></li>
+                <li><input type="radio"   id="cocaCola"         name="pizzas"><label for="cocaCola">Coca-cola</label></li>
+                <li><input type="radio"   id="fantaLaranja"     name="pizzas"><label for="fantaLaranja">Fanta Laranja</label></li>
+                <li><input type="radio"   id="fantaUva"         name="pizzas"><label for="fantaUva">Fanta Uva</label></li>
+                <li><input type="radio"   id="taxaEntrega"      name="pizzas"><label for="taxaEntrega">Taxa de entrega</label></li>
+            </ul>
+        </form>
+    </section>
+
+    <section class="produtos">
+        <button id="vendas">Vendas</button>
+        <button id="estorno">Estorno</button>
+    </section>
+
+    <section class="produtos" id="table">
+        <table>
+            <tr>
+                <th>Produto/Itens</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td>
+                <td id="resultadoMussarela"></td>
+                <td id="vendasMussarela"></td>
+            </tr>
+            <tr>
+                <td>Napolitana</td>
+                <td id="resultadoNapolitana"></td>
+                <td id="vendasNapolitana"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td>
+                <td id="resultadoCalabresa"></td>
+                <td id="vendasCalabresa"></td>
+            </tr>
+
+            <tr>
+                <td>Alho e Óleo</td>
+                <td id="resultadoAlhoEoleo"></td>
+                <td id="vendasAlhoEoleo"></td>
+            </tr>
+            <tr>
+                <td>Marguerita</td>
+                <td id="resultadoMarguerita"></td>
+                <td id="vendasMarguerita"></td>
+            </tr>
+            <tr>
+                <td>Escarola</td>
+                <td id="resultadoEscarola"></td>
+                <td id="vendasEscarola"></td>
+            </tr>
+            <tr>
+                <td>Roma</td>
+                <td id="resultadoRoma"></td>
+                <td id="vendasRoma"></td>
+            </tr>
+            <tr>
+                <td>Dois Queijos</td>
+                <td id="resultadoDoisQueijos"></td>
+                <td id="vendasDoisQueijos"></td>
+            </tr>
+            <tr>
+                <td>Bacon</td>
+                <td id="resultadoBacon"></td>
+                <td id="vendasBacon"></td>
+            </tr>
+            <tr>
+                <td>Frango com catupiry</td>
+                <td id="resultadoFrangoComCatupiry"></td>
+                <td id="vendasFrangoComCatupiry"></td>
+            </tr>
+            <tr>
+                <td>Vegetariana</td>
+                <td id="resultadoVegetariana"></td>
+                <td id="vendasVegetariana"></td>
+            </tr>
+            <tr>
+                <td>Gostosona</td>
+                <td id="resultadoGostosona"></td>
+                <td id="vendasGostosona"></td>
+            </tr>
+            <tr>
+                <td>Coca-cola</td>
+                <td id="resultadoCocaCola"></td>
+                <td id="vendasCocaCola"></td>
+            </tr>
+            <tr>
+                <td>Fanta Laranja</td>
+                <td id="resultadoFantaLaranja"></td>
+                <td id="vendasFantaLaranja"></td>
+            </tr>
+            <tr>
+                <td>Fanta Uva</td>
+                <td id="resultadoFantaUva"></td>
+                <td id="vendasFantaUva"></td>
+            </tr>
+            <tr>
+                <td>Taxa de entrega</td>
+                <td id="resultadoTaxaEntrega"></td>
+                <td id="vendasTaxaEntrega"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="produtos">
+        <button id="export">Planilha</button>
+    </section>
+
+    <footer>
+        <img src="imagens/logo-branco.png" alt="logo rodape">
+        <p class="copyright">&copy; Copyright Pizzaria Bruno's</p>
+    </footer>
+
+    <!--Para utilizar o javascript na pagina html-->
+    <script src="tableToExcel.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

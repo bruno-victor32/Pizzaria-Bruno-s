@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cabecalho-footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Contatos - Pizzaria Bruno's</title>
+</head>
+<body>
+    <header><!--Container para conteúdo introdutório ou um conjunto de links de navegação-->
+        <div class="caixa"><!-- tag div define uma divisão ou uma seção em um documento-->
+            <h1><!--Titulo principal-->
+                <img src="imagens/logo.png" alt="logo-pizzaria">
+            </h1>
+
+            <nav><!--Define um conjunto de links de navegação-->
+                <ul class="navegacao">
+                    <li><a href="index.html">Home</a></li> <!--Tag a permite link, tag li refere-se a uma lista não ordenada-->
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="vendas.html">Vendas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form >
+            <label for="nomeSobrenome">Nome e Sobrenome</label>
+            <input class="input-padrao" type="text" id="nomeSobrenome" required placeholder="Digite o nome e sobrenome">
+
+            <label for="email">Email</label>
+            <input type="email" class="input-padrao" id="email" required placeholder="seuemail@dominio.com">
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input-padrao" id="mensagem" cols="70" rows="10" required placeholder="Digite sua mensagem ..."></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">E-mail</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gostaria de reservar a mesa em qual período do dia</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades e ofertas por e-mail?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Terça - feira</td>
+                    <td>10h ~ 23:59</td>
+                </tr>
+                <tr>
+                    <td>Quarta - feira</td>
+                    <td>10h ~ 23:59</td>
+                </tr>
+                <tr>
+                    <td>Quinta - feira</td>
+                    <td>10h ~ 23:59</td>
+                </tr>
+                <tr>
+                    <td>Sexta - feira</td>
+                    <td>10h ~ 23:59</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10h ~ 23:59</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>10h ~ 23:59</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="imagens/logo-branco.png" alt="logo rodape">
+        <p class="copyright">&copy; Copyright Pizzaria Bruno's</p>
+    </footer>
+</body>
+
+
+</html>

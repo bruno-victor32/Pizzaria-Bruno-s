@@ -1,0 +1,148 @@
+:root{
+    --amarelo: #FFD819;
+    --vermelho: #FF1200;
+    --verde: #13BD5A;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+body{
+    background-color: rgba(255, 166, 0, 0.128);
+}
+
+.subtitulo2{
+    font-weight: bold;
+    color: var(--preto);
+    font-size: 33px;
+}
+
+div#cardapio{
+    margin: 30px -20px 30px -20px;
+    padding: 30px 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+div#cardapio .subtitulo2::after{
+    background-color: var(--preto);
+}
+
+div#cardapio div.pizzas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+div#cardapio div.pizzas div.pizzas-1, div.pizzas-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+div#cardapio div.pizzas-1 div.p1, div.p2{
+    background-color: var(--amarelo);
+}
+
+div#cardapio div.pizzas-2 div.p1, div.p2{
+    background-color: var(--amarelo);
+}
+
+div#cardapio div.p1, div.p2{
+    padding: 25px 15px;
+    width: 20vw;
+}
+
+div#cardapio span.preco{
+    position: relative;
+    top: 20px;
+    left: -40px;
+    background-color: var(--branco);
+    padding: 7px;
+    border-style: solid;
+    border-color: var(--preto);
+    font-family: var(--conteudo);
+    font-size: 1em;
+}
+
+div#cardapio div.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--conteudo);
+    font-size: 0.9em;
+}
+
+div#cardapio img{
+    width: 100%;
+}
+
+div#cardapio div.imagem button{
+    background-color: var(--branco);
+    cursor: pointer;
+    border-style: none;
+    padding: 5px;
+}
+
+div#cardapio div.imagem button:hover{
+    background-color: rgb(216, 211, 211);
+}
+
+div#avaliacoes{
+    margin: 0px 40px 0px 40px;
+    padding: 30px 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--vermelho);
+    font-family: var(--conteudo);
+    color: var(--branco);
+}
+
+div#avaliacoes div.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+div#avaliacoes div.conteudo img{
+    width: 25vw;
+}
+
+div#avaliacoes div.conteudo div.coment div.av{
+    background-color: var(--branco);
+    color: var(--preto);
+    font-family: var(--subtitulo);
+    font-size: 1em;
+    font-weight: 400;
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 30vw;
+    height: 20vh;
+    padding: 20px;
+}
+
+div#avaliacoes div.conteudo div.coment div.av::after{
+    content: '';
+    width: 2px;
+    height: 70%;
+    background-color: var(--preto);
+    position: absolute;
+    left: 2%;
+    top: 20px;
+}
